@@ -134,6 +134,7 @@
                   <li><strong>laguage</strong>: SQL, JDBC</li>
                   <li><strong>Editor</strong>: SQLdeveloper-20.4.1</li>
                   <li><strong>Developer</strong>: 5명</a></li>
+                  
                   <li><strong>Project date</strong>:2021.05.24 - 2021.06.04</li>
                 </ul>
               </div>
@@ -144,33 +145,33 @@
               <li><strong>목적</strong><br>학생, 교사, 관리자가 사용하는 교육센터에서 프로그램이다.</li>
               <li><strong>차이점</strong><br>교육 종료 교육생의 취업현황을 관리하는 테이블을 만들어 교육생이 취업관련 자료를 쉽게 열람할 수 있다.</li>
               <li><strong>담당업무</strong><br>ERD설계, DDL(CREATE, DROP, SELECT) 작성, DML(Trigger), Procedure , Function, View) 작성</li>
-              <li><strong>사용기술[Function]</strong><br>더미 데이터에서 주민번호를 읽어와 substr으로 남자와 여자를 구별해 주는 함수를 만들었다.</li>
-              <li><strong>사용기술[Procedure]</strong><br>tblEnrollment, tblStudent, tblOpenCourse를 inner join을 통해 레코드를 결합시켜 과정이 끝난 교육생을 tblCompleteStudent에 추가하는 프로시저를 만들었다.</li>
-              <li><strong>사용기술[View]</strong><br>개설과정테이블(tblOpenCourse)의 endate 속성에서 레코드 값과 to_char(sysdate, 'yy-mm-dd')라는 문자 형식으로 변환 된 날짜 함수와 비교해서 크기별로 다른 값을 출력한다.</li>
-              <li><strong>느낀점</strong><br>프로젝트 과정 중에서 ERD모델링에 가장 오랜 시간을 투자했다. 테이블끼리 어떻게 참조해야 할지 어떤 연결을 주어야 할지 고민해서 설계하면 다음 날 또 맹점을 발견해 처음부터 다시 설계하기를 여러 번 했다. 다 만들었을때도 아쉬운 점이 있어서 탄탄한 뼈대의 중요성을 깨달았다.</li>
+              
             </ul>
           </div>
-            
-            <!-- <div class="portfolio-description">
-              <h2>학사 관리프로그램</h2>
-              <p>
-                <b>목적||</b> 학생, 교사, 관리자가 사용하는 교육센터에서 프로그램이다.
-              </p>
-              <p>
-                <b>차이점||</b> 교육 종료 교육생의 취업현황을 관리하는 테이블을 만들어 교육생이 취업관련 자료를 쉽게 열람할 수 있다.
-              </p>
-              <p>
-                <b>담당업무||</b> ERD설계, DDL(CREATE, DROP, SELECT) 작성, DML(Trigger), Procedure , Function, View) 작성
-              </p>
-              <p>
-                <b>사용기술[Function]||</b> 더미 데이터에서 주민번호를 읽어와 substr으로 남자와 여자를 구별해 준다.
-              </p>
-              <p>
-                <b>사용기술[Procedure]||</b> tblEnrollment, tblStudent, tblOpenCourse를 inner join을 통해 레코드를 결합시켜 과정이 끝난 교육생을 tblCompleteStudent에 추가하는 프로시저를 만들었다.
-              </p>
-            </div> -->
+        </div>
+        <div class="portfolio-info-skill">
+          <div class="portfolio-skill">
+            <table class="table table-bordered">
+              <tr>
+                <th>기술분야</th>
+                <th>상세내용</th>
+              </tr>
+              <tr>
+                <td>Function</td>
+                <td>더미 데이터에서 주민번호를 읽어와 substr으로 남자와 여자를 구별해 데이터를 출력하는 함수를 만들었다.</td>
+              </tr>
+              <tr>
+                <td>Procedure</td>
+                <td>tblEnrollment, tblStudent, tblOpenCourse를 inner join을 통해 레코드를 결합시켜 과정이 끝난 교육생을 tblCompleteStudent에 추가하는 프로시저를 만들었다.</td>
+              </tr>
+              <tr>
+                <td>View</td>
+                <td>개설과정테이블(tblOpenCourse)의 endate 속성에서 레코드 값과 to_char(sysdate, 'yy-mm-dd')라는 문자 형식으로 변환 된 날짜 함수와 비교해서 크기별로 다른 값을 출력한다.</td>
+              </tr>
+            </table>
+           
+            <strong>느낀점</strong><br>ERD를 처음 설계했기 때문에 ERD모델링에 가장 오랜 시간을 투자했습니다. 이론에서 배웠던것을 바탕으로 테이블끼리 어떻게 참조해야 할지 어떤 연결을 주어야 할지 부모-자식관계는 어떻게 형성되는지를 고려해서 설계를 진행했습니다. 업무를 진행하다 보니 테이블에 컬럼들을 수정해야하는 문제점이 발생하기도 했지만, 팀원들과 의견을 적극적으로 공유하면서 쿼리문을 수정하고 추가할 수 있었습니다.
           </div>
-
         </div>
 
       </div>
@@ -187,34 +188,25 @@
         <div class="col-lg-12">
           <h4>Design Screen</h4>
           <!-- (div.little-screen>img[src="assets/img/portfolio/web01/$$.png"])*10 -->
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/01.png" alt="">요구분석서</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/02.png" alt="">논리 ERD</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/03.png" alt="">물리 ERD</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/04.png" alt="">DDL- CREAT문</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/06.png" alt="">DDL- DROP문</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/05.png" alt="">기초 데이터 더미</div>
-          
-          
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/01.png" alt="">ERD</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/02.png" alt="">관리자/교사/교육생- 로그인 프로시저</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/03.png" alt="">로그인 결과</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/04.png" alt="">관리자- 교육종료생 관리 프로시저</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/05.png" alt="">관리자- 교육종료생 관리 결과</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/06.png" alt="">교사- 교육생출결관리</div>
+        </div>
+        <div id="screen" class="screen" style="display: none;">
+          <div class="screen-value">상세보기 화면입니다.</div>
+          <div class="screen-zoom"><img id="screen-zoom"></div>
+          <div>
+            <textarea class="screen-content" id="content" readonly></textarea>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="last">
-    <div class="container">
-      <div class="row justify-content-center">
-        <h4>Capture Screen</h4>
-        <div class="col-lg-12 ">
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/07.png" alt="">VIEW 생성 코드</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/08.png" alt="">INDEX 생성 코드</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/09.png" alt="">TRIGGER 생성 코드</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/10.png" alt="">PROCEDURE 생성 코드</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/11.png" alt="">FUNCTION 생성 코드</div>
-          <div class="little-screen"><img src="assets/img/portfolio/oracle/12.png" alt="">TRIGGER 출력 화면</div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   
 
@@ -241,6 +233,44 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function show(id) {
+      document.getElementById("screen").style.display = "block";
+      document.getElementById("screen-zoom").src = id.getAttribute('src'); 
+      var src = id.getAttribute('src');
+      var content = "";
+
+      /*
+      <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/01.png" alt="">ERD</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/02.png" alt="">관리자/교사/교육생- 로그인 프로시저</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/03.png" alt="">로그인 결과</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/04.png" alt="">관리자- 교육종료생 관리 프로시저</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/06.png" alt="">관리자- 교육종료생 관리 결과</div>
+          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/05.png" alt="">교사- 교육생출결관리</div>
+        </div>
+      */
+
+      if(src.lastIndexOf("01.png") > -1){
+        content = "ERD\n8개의 정적 테이블을 포함한 총 26개의 테이블로 ERD를 설계하였다.\n(테이블: 출결확인, 출결, 교육생, 교사평가, 교육종료교육생, 취업현황, 강의실, 상담일지, 수강신청, 성적, 구인공고, 전체과정, 개설과정, \n강의평가, 시험, 자격증정보, 교사, 강의가능과목, 전체과목, 개설과목, 시험지등록여부, 전체교재, 사용교재, 강의스케줄, 시험문제, 관리자)";
+      } else if(src.lastIndexOf("02.png") > -1){
+        content = "로그인 프로시저\n관리자, 교사, 교육생은 아이디와 비밀번호를 입력할수 있고 입력한 정보를 통해 로그인성공, 실패로 결과를 출력하는 프로시저이다.";
+      } else if(src.lastIndexOf("03.png") > -1){
+        content = "로그인 프로시저 결과\n입력한 아이디와 비밀번호가 일치하면 'OOO님 로그인 성공'이라는 메시지가 출력된다.";
+      } else if(src.lastIndexOf("04.png") > -1){
+        content = "교육종료 교육생을 관리 프로시저\n과정이 끝난 교육생을 교육종료 교육생 테이블에 추가하는 프로시저이다.";
+      } else if(src.lastIndexOf("05.png") > -1){
+        content = "교육종료 교육생을 관리 프로시저 결과\n현 날짜가 개설 과정 종료날짜 이후일 때 해당 과정에 있는 교육생을 교육종료 교육생 테이블로 이동한다.";
+      } else if(src.lastIndexOf("06.png") > -1){
+        content = "교육생 출결 조회 프로시저\n교사명, 과정번호, 날짜를 입력하면 해당 과정의 교육생의 출결(번호, 교육생이름, 출결상태)을 확인할 수 있는 프로시저이다.";
+      }
+      document.getElementById("content").value = content; 
+      document.getElementById("content").style.height = "1px";
+      document.getElementById("content").style.height = (12 + document.getElementById("content").scrollHeight) + "px";
+      
+      
+    }
+  </script>
 
 </body>
 
