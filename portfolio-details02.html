@@ -162,15 +162,18 @@
               </tr>
               <tr>
                 <td>Procedure</td>
-                <td>tblEnrollment, tblStudent, tblOpenCourse를 inner join을 통해 레코드를 결합시켜 과정이 끝난 교육생을 tblCompleteStudent에 추가하는 프로시저를 만들었다.</td>
+                <td>tblEnrollment, tblStudent, tblOpenCourse를 inner join을 통해 레코드를 결합시켜 <br>과정이 끝난 교육생을 tblCompleteStudent에 추가하는 프로시저를 만들었다.</td>
               </tr>
               <tr>
                 <td>View</td>
-                <td>개설과정테이블(tblOpenCourse)의 endate 속성에서 레코드 값과 to_char(sysdate, 'yy-mm-dd')라는 문자 형식으로 변환 된 날짜 함수와 비교해서 크기별로 다른 값을 출력한다.</td>
+                <td>개설과정테이블(tblOpenCourse)의 endate 속성에서 레코드 값과<br> to_char(sysdate, 'yy-mm-dd')라는 문자 형식으로 변환 된 날짜 함수와 비교해서 크기별로 다른 값을 출력한다.</td>
               </tr>
             </table>
            
-            <strong>느낀점</strong><br>ERD를 처음 설계했기 때문에 ERD모델링에 가장 오랜 시간을 투자했습니다. 이론에서 배웠던것을 바탕으로 테이블끼리 어떻게 참조해야 할지 어떤 연결을 주어야 할지 부모-자식관계는 어떻게 형성되는지를 고려해서 설계를 진행했습니다. 업무를 진행하다 보니 테이블에 컬럼들을 수정해야하는 문제점이 발생하기도 했지만, 팀원들과 의견을 적극적으로 공유하면서 쿼리문을 수정하고 추가할 수 있었습니다.
+            <strong>느낀점</strong><br>
+            실제 교육센터 이용경험을 바탕으로 관리자, 교사, 교육생들에게 필요한 기본적인 기능들과 추가적으로 교육종료 교육생들에게 필요한 채용지원 현황을 구현했습니다. <br>
+            처음 진행해보는 데이터베이스 프로젝트이기 때문에 ERD모델링에 가장 오랜 시간을 투자했습니다. 이론에서 배웠던것을 바탕으로 테이블끼리 어떻게 참조해야 할지 어떤 연결을 주어야 할지 부모-자식관계는 어떻게 형성되는지를 고려해서 설계를 진행했습니다. <br>
+            업무를 진행하다 보니 테이블에 컬럼들을 수정하거나 check절에 제약사항을 추가가 필요해 DDL문을 변경해야 하는 문제점이 발생하기도 했지만, CODE TOGETHER을 설치해 팀원들과 코드를 공유하면서 쿼리문을 효율적으로 수정하고 추가할 수 있었습니다.
           </div>
         </div>
 
@@ -197,8 +200,8 @@
         </div>
         <div id="screen" class="screen" style="display: none;">
           <div class="screen-value">상세보기 화면입니다.</div>
-          <div class="screen-zoom"><img id="screen-zoom"></div>
-          <div>
+          <div class="screen-zoom screen-float"><img id="screen-zoom"></div>
+          <div class="screen-float">
             <textarea class="screen-content" id="content" readonly></textarea>
           </div>
         </div>
@@ -241,28 +244,19 @@
       var src = id.getAttribute('src');
       var content = "";
 
-      /*
-      <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/01.png" alt="">ERD</div>
-          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/02.png" alt="">관리자/교사/교육생- 로그인 프로시저</div>
-          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/03.png" alt="">로그인 결과</div>
-          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/04.png" alt="">관리자- 교육종료생 관리 프로시저</div>
-          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/06.png" alt="">관리자- 교육종료생 관리 결과</div>
-          <div class="little-screen"><img  onclick="show(this)" src="assets/img/portfolio/oracle/05.png" alt="">교사- 교육생출결관리</div>
-        </div>
-      */
 
       if(src.lastIndexOf("01.png") > -1){
-        content = "ERD\n8개의 정적 테이블을 포함한 총 26개의 테이블로 ERD를 설계하였다.\n(테이블: 출결확인, 출결, 교육생, 교사평가, 교육종료교육생, 취업현황, 강의실, 상담일지, 수강신청, 성적, 구인공고, 전체과정, 개설과정, \n강의평가, 시험, 자격증정보, 교사, 강의가능과목, 전체과목, 개설과목, 시험지등록여부, 전체교재, 사용교재, 강의스케줄, 시험문제, 관리자)";
+        content = "ERD\n\n1. 8개의 정적 테이블을 포함한 총 26개의 테이블로 ERD를 설계하였다.\n\n2. 테이블: 출결확인, 출결, 교육생, 교사평가, 교육종료교육생, 취업현황, 강의실, 상담일지, 수강신청, 성적, 구인공고, 전체과정, 개설과정, 강의평가, 시험, 자격증정보, 교사, 강의가능과목, 전체과목, 개설과목, 시험지등록여부, 전체교재, 사용교재, 강의스케줄, 시험문제, 관리자";
       } else if(src.lastIndexOf("02.png") > -1){
-        content = "로그인 프로시저\n관리자, 교사, 교육생은 아이디와 비밀번호를 입력할수 있고 입력한 정보를 통해 로그인성공, 실패로 결과를 출력하는 프로시저이다.";
+        content = "로그인 프로시저\n\n1. 관리자, 교사, 교육생은 아이디와 비밀번호를 입력할수 있다.\n\n2. 입력한 정보를 통해 로그인성공, 실패로 결과를 출력한다.";
       } else if(src.lastIndexOf("03.png") > -1){
-        content = "로그인 프로시저 결과\n입력한 아이디와 비밀번호가 일치하면 'OOO님 로그인 성공'이라는 메시지가 출력된다.";
+        content = "로그인 프로시저 결과\n\n1. 입력한 아이디와 비밀번호가 일치하면 'OOO님 로그인 성공'이라는 메시지가 출력된다.";
       } else if(src.lastIndexOf("04.png") > -1){
-        content = "교육종료 교육생을 관리 프로시저\n과정이 끝난 교육생을 교육종료 교육생 테이블에 추가하는 프로시저이다.";
+        content = "교육종료 교육생을 관리 프로시저\n\n1. 과정이 끝난 교육생을 교육종료 교육생 테이블에 추가하는 프로시저이다.";
       } else if(src.lastIndexOf("05.png") > -1){
-        content = "교육종료 교육생을 관리 프로시저 결과\n현 날짜가 개설 과정 종료날짜 이후일 때 해당 과정에 있는 교육생을 교육종료 교육생 테이블로 이동한다.";
+        content = "교육종료 교육생을 관리 프로시저 결과\n\n1. 현 날짜가 개설 과정 종료날짜 이후일 때 해당 과정에 있는 교육생을 교육종료 교육생 테이블로 이동한다.";
       } else if(src.lastIndexOf("06.png") > -1){
-        content = "교육생 출결 조회 프로시저\n교사명, 과정번호, 날짜를 입력하면 해당 과정의 교육생의 출결(번호, 교육생이름, 출결상태)을 확인할 수 있는 프로시저이다.";
+        content = "교육생 출결 조회 프로시저\n\n1. 교사명, 과정번호, 날짜를 입력한다. \n\n2. 해당 과정의 교육생의 출결(번호, 교육생이름, 출결상태)을 확인할 수 있다.";
       }
       document.getElementById("content").value = content; 
       document.getElementById("content").style.height = "1px";

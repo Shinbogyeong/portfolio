@@ -131,7 +131,7 @@
                   <li><strong>Category</strong>: Web design</li>
                   <li><strong>Language</strong>: HTML, CSS, Oracle</li>
                   <li><strong>Editor</strong>: Atom</li>
-                  <li><strong>Developer</strong>: 2명</li>
+                  <li><strong>Developer</strong>: 1명</li>
                   <li><strong>Project date</strong>: 05 June, 2017</li>
                 </ul>
               </div>
@@ -142,16 +142,42 @@
                 <li><strong>목적</strong> <br>다양하게 개설된 스포츠 강의에 대한 설명과 편리한 수강신청을 통해 보다 쉽게 건강관리를 할 수 있다.</li>
                 <li><strong>차이점</strong> <br>기존의 헬스장 홈페이지와 달리 비만도를 측정할 수 있어 손쉽게 자신의 건강 상태를 체크할 수 있으며 각 비만도에 따라 다양한 관리법을 추천한다. 또한 DB와 연동해 실시간 수강신청 인원을 출력한다.</li>
                 <li><strong>담당업무</strong> <br>HTML과 CSS를 이용한 웹 화면구현</li>
-                <li><strong>사용기술(수강신청)</strong> <br>a:hover를 이용해 각 운동 아이콘에 커서를 올리면 강사의 약력이 나오게 구성하였고 하단부에 DB와 연계해서 현재 수강신청 인원을 나타냈다.</li>
-                <li><strong>사용기술(강좌소개)</strong> <br>a 태그의 href 속성으로 강의의 커리큘럼이 적힌 사이트로 이동시킨다.</li>
-                <li><strong>사용기술(비만도 측정)</strong> <br>성별에 따라 비만도를 구분하였고 input 태그의 type 속성을 range로 설정해 본인의 비만도 수준을 살필 수 있다.</li>
-                <li><strong>느낀점</strong> <br> 평생을 완성된 웹페이지만 봐오다 처음으로 직접 만들려니 디자인의 한계를 느꼈지만 내 취향에 가미할 수 있어서 재밌는 작업이았다. 단순해 보이는 하나의 웹페이지에 서너개의 언어로 구현한다는게 쉽지만은 않았지만 다양한 언어를 접하는 소중한 경험이 되었다.</li>
                 </ul>  
-               
+            </div>
+
+          </div>
+
+          <div class="portfolio-info-skill">
+            <div class="portfolio-skill">
+              <table class="table table-bordered">
+                <tr>
+                  <th>구현화면</th>
+                  <th>상세내용</th>
+                </tr>
+                <tr>
+                  <td>수강신청</td>
+                  <td>a:hover를 이용해 각 운동 아이콘에 커서를 올리면 강사의 약력이 나오게 구성하였고 하단부에 DB와 연계해서 현재 수강신청 인원을 나타냈다.</td>
+                </tr>
+                <tr>
+                  <td>강좌소개</td>
+                  <td>a 태그의 href 속성으로 강의의 커리큘럼이 적힌 사이트로 이동시킨다.</td>
+                </tr>
+                <tr>
+                  <td>비만도 측정</td>
+                  <td>성별에 따라 비만도를 구분하였고 input 태그의 type 속성을 range로 설정해 본인의 비만도 수준을 살필 수 있다.</td>
+                </tr>
+              </table>
+             
+              <strong>느낀점</strong><br>
+              완성도 높은 웹페이지만 사용하다가 처음으로 html, DB, CSS와 JS까지 스스로 구현하다보니 <BR>도처에 널린 웹페이지에도 수 많은 노력과 시간이 들어간다는 것을 알게 되었습니다.<br>
+              사용자의 입장에서 웹페이지를 쉽게 이해하고 이용할 수 있도록 레이아웃을 구성했고 거기에 취향까지 가미 해 나만의 웹페이지 디자인을 구성했습니다.<BR>
+               단순해 보이는 하나의 웹페이지에 서너개의 언어로 구현한다는게 쉽지만은 않았지만 다양한 언어를 접하는 소중한 경험이 되었습니다.
+
+              
 
             </div>
-            
           </div>
+        </div>
 
         </div>
 
@@ -166,16 +192,23 @@
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <h4>Design Screen</h4>
-            <!-- (div.little-screen>img[src="/assets/img/portfolio/web01/$$.png"])*10 -->
-            <div class="little-screen"><img src="assets/img/portfolio/web01/01.png" alt="">디자인 layout</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/03.png" alt="">DB구조 - 비만도 측정</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/04.png" alt="">DB구조 - 수강 신청</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/05.png" alt="">전체 소스 구조</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/14.png" alt="">테이블 DDL코드</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/15.png" alt="">비만도 계산 코드</div>
+          <h4>Capture Screen</h4>
+          <div class="col-lg-12 ">
+            <div class="little-screen"><img onclick="show(this)" src="assets/img/portfolio/web01/07.png" alt="">HOME화면</div>
+            <div class="little-screen"><img onclick="show(this)" src="assets/img/portfolio/web01/08.png" alt="">비만도 측정 메인 화면</div>
+            <div class="little-screen"><img onclick="show(this)" src="assets/img/portfolio/web01/10.png" alt="">비만도 결과 확인 화면</div>
+            <div class="little-screen"><img onclick="show(this)" src="assets/img/portfolio/web01/11.png" alt="">강좌 소개 메인 화면</div>
+            <div class="little-screen"><img onclick="show(this)" src="assets/img/portfolio/web01/12.png" alt="">수강 신청 메인 화면</div>
+            <div class="little-screen"><img onclick="show(this)" src="assets/img/portfolio/web01/13.png" alt="">수강 신청 입력 화면</div>
           </div>
+          <div id="screen" class="screen" style="display: none;">
+            <div class="screen-value">상세보기 화면입니다.</div>
+            <div class="screen-zoom screen-float"><img id="screen-zoom" class="screen-zoom-size"></div>
+            <div class="screen-float">
+              <textarea class="screen-content" id="content" readonly></textarea>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -183,14 +216,19 @@
     <div class="last">
       <div class="container">
         <div class="row justify-content-center">
-          <h4>Capture Screen</h4>
-          <div class="col-lg-12 ">
-            <div class="little-screen"><img src="assets/img/portfolio/web01/07.png" alt="">HOME화면</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/08.png" alt="">비만도 측정 메인 화면</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/10.png" alt="">비만도 결과 확인 화면</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/11.png" alt="">강좌 소개 메인 화면</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/12.png" alt="">수강 신청 메인 화면</div>
-            <div class="little-screen"><img src="assets/img/portfolio/web01/13.png" alt="">수강 신청 입력 화면</div>
+          <div class="col-lg-12">
+            <h4>Design Screen</h4>
+            <!-- (div.little-screen>img[src="/assets/img/portfolio/web01/$$.png"])*10 -->
+            <div class="little-screen"><img onclick="show2(this)" src="assets/img/portfolio/web01/01.png" alt="">디자인 layout</div>
+            <div class="little-screen"><img onclick="show2(this)" src="assets/img/portfolio/web01/03.png" alt="">DB구조 - 비만도 측정</div>
+            <div class="little-screen"><img onclick="show2(this)" src="assets/img/portfolio/web01/04.png" alt="">DB구조 - 수강 신청</div>
+            <div class="little-screen"><img onclick="show2(this)" src="assets/img/portfolio/web01/05.png" alt="">전체 소스 구조</div>
+            <div class="little-screen"><img onclick="show2(this)" src="assets/img/portfolio/web01/14.png" alt="">테이블 DDL코드</div>
+            <div class="little-screen"><img onclick="show2(this)" src="assets/img/portfolio/web01/15.png" alt="">비만도 계산 코드</div>
+          </div>
+          <div id="screen2" class="screen" style="display: none;">
+            <div class="screen-value">상세보기 화면입니다.</div>
+            <div class="screen-zoom1"><img id="screen-zoom2"></div>
           </div>
         </div>
       </div>
@@ -218,6 +256,48 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script>
+    
+  function show(id) { 
+      document.getElementById("screen").style.display = "block";
+      document.getElementById("screen-zoom").src = id.getAttribute('src'); 
+      var src = id.getAttribute('src');
+      var content = "";
+
+
+      if(src.lastIndexOf("07.png") > -1){
+        content = "메인페이지\n\n1. 사용자는 중앙 메뉴를 클릭해 각 카테고리로 이동이 가능하다 \n\n";
+      } else if(src.lastIndexOf("08.png") > -1){
+        content = "비만도관리 페이지\n\n1. 성별에 따라 비만도와 연령대 평균 체중이 다르기 때문에 사용자의 성별에 따라 남성과 여성버튼을 선택할 수 있다.";
+      } else if(src.lastIndexOf("10.png") > -1){
+        content = "비만도관리 상세페이지\n\n1. 사용자는 이름, 나이, 신장, 체중을 입력할 수 있다.\n\n2. 입력받은 신장 값과 체중 값으로 알고리즘을 통해 비만도가 계산된다. \n\n3. 하단에 표를 통해 자신의 비만도 수준와 비만도에 따른 건강 관리법을 확인할 수 있다.";
+      } else if(src.lastIndexOf("11.png") > -1){
+        content = "강좌소개 페이지\n\n1. 사이트와 연계된 스포츠 강의에 대한 간략한 설명을 확인할 수 있다.\n\n2. 사진을 클릭하면 해당 스포츠강의 연관 페이지로 이동해 상세 강의 내용과 커리큘럼을 확인할 수 있다.";
+      } else if(src.lastIndexOf("12.png") > -1){
+        content = "수강신청 메인페이지\n\n1. 화면 중앙의 메뉴를 통해 요가, 줌바, 스피닝 강의 수강신청 페이지로 이동할 수 있다.\n\n2. 각 강의에 커서를 올리면 강사에 대한 약력이 나온다.";
+      } else if(src.lastIndexOf("13.png") > -1){
+        content = "수강신청 상세페이지\n\n1. 사용자는 이름, 나이, 성별, 전화번호, 수강월, 수강요일을 작성할 수 있다.\n\n2. 신청버튼을 클릭하면 '신청이 완료되었습니다.'라는 문구가 뜬다.";
+      }
+      document.getElementById("content").value = content; 
+      document.getElementById("content").style.height = "1px";
+      document.getElementById("content").style.height = (12 + document.getElementById("content").scrollHeight) + "px";
+    }
+
+    function show2(id) {
+      document.getElementById("screen2").style.display = "block";
+      document.getElementById("screen-zoom2").src = id.getAttribute('src'); 
+      var src = id.getAttribute('src');
+      var content = "";
+
+
+      
+      document.getElementById("content2").value = content; 
+      document.getElementById("content2").style.height = "1px";
+      document.getElementById("content2").style.height = (12 + document.getElementById("content2").scrollHeight) + "px";
+    }
+
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
